@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="LearningTestNg.LearningGroupExecution">
+        <methods>
+          <include name="endtoendTest"/>
+          <include name="wishlistTest"/>
+        </methods>
+      </class> <!-- LearningTestNg.LearningGroupExecution -->
+      <class name="LearningTestNg.RegisterTest">
+        <methods>
+          <include name="registertest"/>
+          <include name="browserSetup"/>
+          <include name="browserTeardown"/>
+        </methods>
+      </class> <!-- LearningTestNg.RegisterTest -->
+      <class name="LearningTestNg.LoginTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="browserSetup"/>
+          <include name="browserTeardown"/>
+        </methods>
+      </class> <!-- LearningTestNg.LoginTest -->
+      <class name="LearningTestNg.LearningParallelExecution">
+        <methods>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- LearningTestNg.LearningParallelExecution -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
